@@ -1,0 +1,253 @@
+#header
+	+clearfix
+	padding-top: 15px
+	background: image-url("header-bg.jpg")
+	+breakpoint(767px)
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 90
+	.logo
+		float: left
+		width: 180/1180*100%
+		text-align: center
+		margin-right: 20/1180*100%
+		+transition(0.2s)
+		&:hover
+			+opacity(0.5)
+		+breakpoint(767px)
+			margin-right: 8px
+	.header-menu
+		width: 980/1180*100%
+		display: block
+		margin-top: 36px
+		+box-sizing(border-box)
+		padding-left: 9px
+		+clearfix
+		+breakpoint(1220px)
+			margin-top: 10px
+			padding-left: 0
+		+breakpoint(767px)
+			display: none
+		li
+			float: left
+			margin-right: 52px
+			&:last-child
+				margin-right: 0
+			a 
+				font-size: 16px
+				line-height: 20px
+				color: #0d733a
+				text-transform: uppercase
+				display: inline-block
+				font-weight: 600
+				+transition(0.2s)
+				&:hover
+					color: #082f19
+			+breakpoint(1220px)
+				float: none 
+				display: inline-block
+				text-align: center
+				margin-right: 20px
+
+
+.mobile-menu
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	z-index: 89
+	right: -100%
+	background: rgba(#000, 0.5)
+	+opacity(0)
+	.mobile-menu-item
+		float: right
+		background: #fff
+		height: 100%
+		padding: 115px 20px 0px
+		li
+			display: block
+			&:last-child
+				a 
+					margin-right: 0
+			a 
+				font-size: 16px
+				line-height: 20px
+				color: #0d733a
+				text-transform: uppercase
+				display: inline-block
+				font-weight: 600
+				+transition(0.2s)
+				&:hover
+					color: #082f19
+
+.menu-burger
+	display: none
+	+transition(0.3s)
+	+breakpoint(767px)
+		display: inline-block
+		position: relative
+		float: right
+		cursor: pointer
+		width: 24px
+		height: 17px
+		z-index: 90
+	.menu-burger-item
+		display: block
+		width: 100%
+		background: #4faa22
+		height: 3px
+		margin-top: 7px
+		+transition(0.3s)
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			width: 100%
+			background: #4faa22
+			height: 5px
+			+breakpoint(767px)
+				height: 3px
+		&:after
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			display: block
+			width: 100%
+			background: #4faa22
+			height: 3px
+
+.mobile-menu-open
+	+transition(0.3s)
+	.mobile-menu
+		+transition(0.3s)
+		display: block
+		top: 0
+		right: 0
+		+opacity(1)
+		a 
+			font-size: 16px
+	.menu-burger
+		+transition(0.3s)
+		.menu-burger-item
+			+transition(0.3s)
+			+rotate(135deg)
+			margin-bottom: -3px
+			margin-top: 3px
+			&:after
+				display: none
+			&:before
+				+rotate(90deg)
+
+.header-contact
+	display: inline-block
+	width: 980/1180*100%
+	+clearfix
+	+breakpoint(767px)
+		width: 70%
+		padding-bottom: 10px
+	p 
+		float: left
+	.phone
+		margin-top: 2px
+		color: #555555
+		font-size: 16px
+		line-height: 32px
+		display: inline-block
+		text-transform: uppercase
+		padding-left: 45px
+		font-weight: 600
+		letter-spacing: 0.3px
+		background: image-url("phone.png") 8px center no-repeat
+		+breakpoint(1023px)
+			padding-left: 30px
+		+breakpoint(767px)
+			background-position: 0 top
+			margin-top: 0
+			line-height: 16px
+			padding-left: 20px
+			font-size: 14px
+		span
+			margin-left: 29px
+			+breakpoint(1023px)
+				margin-left: 15px
+			+breakpoint(767px)
+				margin-left: 0
+				margin-top: 2px
+				display: inline-block
+
+	.location
+		color: #363f3f
+		font-size: 14px
+		line-height: 32px
+		display: inline-block
+		text-transform: inherit
+		background: image-url("map-dot.png") left center no-repeat
+		margin-left: 33px
+		font-weight: 400
+		padding-top: 3px
+		padding-left: 30px
+		letter-spacing: 0.3px
+		+breakpoint(1023px)
+			margin-left: 20px
+		+breakpoint(767px)
+			margin-left: 0
+			background-position: 0 0
+			padding-top: 0
+			margin-top: 5px
+			padding-left: 20px
+			font-size: 13px
+			line-height: 15px
+			padding-bottom: 5px
+
+.input-container	
+	float: right
+	position: relative
+	width: 280px
+	height: 100%
+	+breakpoint(1150px)
+		float: none
+		display: inline
+	+breakpoint(767px)
+		margin-top: 3px
+	input[type="search"]
+		color: #363f3f
+		font-size: 14px
+		line-height: 32px
+		padding: 2px 30px 2px 10px
+		border: 1px solid #d9e0dd
+		outline: none
+		width: 100%
+		+box-sizing(border-box)
+		+appearance(none)
+		&::-webkit-search-decoration,
+		&::-webkit-search-cancel-button,
+		&::-webkit-search-results-button, 
+		&::-webkit-search-results-decoration
+			display: none
+		&::-ms-clear
+			display: none
+		+breakpoint(767px)
+			line-height: 20px
+	input[type="submit"]
+		+opacity(0)
+		outline: none
+		width: 30px
+		+appearance(none)
+		cursor: pointer
+		height: 100%
+.submit-conteiner
+	background: image-url("search.png") no-repeat center center
+	position: absolute
+	right: 0px
+	top: 0px
+	height: 100%
+	line-height: 20px
+	+breakpoint(767px)
+		background-size: 50%
+
+
+
