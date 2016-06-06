@@ -1,1 +1,1 @@
-jQuery(function(e){var n=e("body"),o=e(".menu-burger");o.on("click",function(e){e.preventDefault(),n.toggleClass("mobile-menu-open")});var i=e(".mobile-menu");i.on("click",function(e){e.preventDefault(),n.removeClass("mobile-menu-open")});var u=e(".mobile-menu-item");u.on("click",function(e){e.stopPropagation()})});
+jQuery(function(n){});
