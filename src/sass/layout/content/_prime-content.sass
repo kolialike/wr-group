@@ -5,6 +5,7 @@
 	float: left 
 	margin-top: 81px
 	margin-left: 9px
+	padding-bottom: 30px
 	+box-sizing(border-box)
 	h4
 		font-size: 26px
@@ -85,11 +86,14 @@
 		margin-left: 29px
 		width: 100%
 
+.content-tabs
+	background: #eef6f1
+	
 .tabs
 	font-size: 0
 	line-height: 0
 	width: 1180px
-	background: #eef6f1
+	display: flex
 	&:before
 		content: ""
 		width: 0
@@ -124,7 +128,7 @@
 			display: block
 .tabs-container
 	+pie-clearfix
-	margin-bottom: 20px
+	margin-bottom: 55px
 	display: none
 	&.active
 		display: block
@@ -197,9 +201,9 @@
 				left: 30px
 				top: 15px
 			&:hover
-				background: #232210
-				color: #f3ec19
-				+box-shadow(0px 3px 0px 0px rgba(#000,1))
+				background: #f6f174
+				color: #111110
+				+box-shadow(0px 3px 0px 0px rgba(#f3ec19,1))
 
 .drawn-up-active
 	.drawn-up
@@ -212,7 +216,7 @@
 	background: rgba(#2c3631, 0.3)
 	position: fixed
 	top: -100%
-	+transition(0.2s)
+	+transition(0.3s opacity)
 	left: -100%
 	+opacity(0)
 	z-index: 100
@@ -272,8 +276,8 @@
 		margin-top: 54px
 		+transition(0.2s)
 		&:hover
-			background: #edf5f1
-			color: #31a665
+			background: #22603d
+			color: #edf5f1
 
 .order-service-active
 	.order-service
@@ -286,7 +290,7 @@
 	background: rgba(#2c3631, 0.3)
 	position: fixed
 	top: -100%
-	+transition(0.2s)
+	+transition(0.3s opacity)
 	left: -100%
 	+opacity(0)
 	z-index: 100
@@ -321,6 +325,9 @@
 		width: 25px
 		height: 25px
 		cursor: pointer
+		+transition(0.2s)
+		&:hover
+			+opacity(0.5)
 		&:before
 			content: ""
 			height: 2px
