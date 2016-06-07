@@ -2,7 +2,15 @@
 	+clearfix
 	padding-top: 15px
 	background: image-url("header-bg.jpg") center 60px no-repeat
+<<<<<<< HEAD
 
+=======
+	// +breakpoint(767px)
+		// position: fixed
+		// top: 0
+		// left: 0
+		// z-index: 90
+>>>>>>> 9aecd9abb761d04e6f0b4c141f974974fa92db7c
 	.logo
 		float: left
 		width: 180px
@@ -11,7 +19,12 @@
 		+transition(0.2s)
 		&:hover
 			+opacity(0.5)
+<<<<<<< HEAD
 
+=======
+		// +breakpoint(767px)
+			// margin-right: 8px
+>>>>>>> 9aecd9abb761d04e6f0b4c141f974974fa92db7c
 	.header-menu
 		width: 980px
 		display: block
@@ -19,7 +32,15 @@
 		+box-sizing(border-box)
 		padding-left: 9px
 		+clearfix
+<<<<<<< HEAD
 
+=======
+		// +breakpoint(1220px)
+			// margin-top: 10px
+			// padding-left: 0
+		// +breakpoint(767px)
+			// display: none
+>>>>>>> 9aecd9abb761d04e6f0b4c141f974974fa92db7c
 		li
 			float: left
 			margin-right: 52px
@@ -35,11 +56,117 @@
 				+transition(0.2s)
 				&:hover
 					color: #082f19
+<<<<<<< HEAD
+=======
+			// +breakpoint(1220px)
+				// float: none 
+				// display: inline-block
+				// text-align: center
+				// margin-right: 20px
+
+
+// .mobile-menu
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	z-index: 89
+	right: -100%
+	background: rgba(#000, 0.5)
+	+opacity(0)
+	.mobile-menu-item
+		float: right
+		background: #fff
+		height: 100%
+		padding: 115px 20px 0px
+		li
+			display: block
+			&:last-child
+				a 
+					margin-right: 0
+			a 
+				font-size: 16px
+				line-height: 20px
+				color: #0d733a
+				text-transform: uppercase
+				display: inline-block
+				font-weight: 600
+				+transition(0.2s)
+				&:hover
+					color: #082f19
+
+// .menu-burger
+	display: none
+	+transition(0.3s)
+	// +breakpoint(767px)
+		display: inline-block
+		position: relative
+		float: right
+		cursor: pointer
+		width: 24px
+		height: 17px
+		z-index: 90
+	.menu-burger-item
+		display: block
+		width: 100%
+		background: #4faa22
+		height: 3px
+		margin-top: 7px
+		+transition(0.3s)
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			width: 100%
+			background: #4faa22
+			height: 5px
+			// +breakpoint(767px)
+				height: 3px
+		&:after
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			display: block
+			width: 100%
+			background: #4faa22
+			height: 3px
+
+// .mobile-menu-open
+	+transition(0.3s)
+	.mobile-menu
+		+transition(0.3s)
+		display: block
+		top: 0
+		right: 0
+		+opacity(1)
+		a 
+			font-size: 16px
+	.menu-burger
+		+transition(0.3s)
+		.menu-burger-item
+			+transition(0.3s)
+			+rotate(135deg)
+			margin-bottom: -3px
+			margin-top: 3px
+			&:after
+				display: none
+			&:before
+				+rotate(90deg)
+>>>>>>> 9aecd9abb761d04e6f0b4c141f974974fa92db7c
 
 .header-contact
 	display: inline-block
 	width: 980px
 	+clearfix
+<<<<<<< HEAD
+=======
+	// +breakpoint(767px)
+		// width: 70%
+		// padding-bottom: 10px
+>>>>>>> 9aecd9abb761d04e6f0b4c141f974974fa92db7c
 	p 
 		float: left
 	.phone
@@ -53,8 +180,28 @@
 		font-weight: 600
 		letter-spacing: 0.3px
 		background: image-url("phone.png") 8px center no-repeat
+<<<<<<< HEAD
 		span
 			margin-left: 29px
+=======
+		// +breakpoint(1023px)
+			// padding-left: 30px
+		// +breakpoint(767px)
+			// background-position: 0 top
+			// margin-top: 0
+			// line-height: 16px
+			// padding-left: 20px
+			// font-size: 14px
+		span
+			margin-left: 29px
+			// +breakpoint(1023px)
+				// margin-left: 15px
+			// +breakpoint(767px)
+				// margin-left: 0
+				// margin-top: 2px
+				// display: inline-block
+
+>>>>>>> 9aecd9abb761d04e6f0b4c141f974974fa92db7c
 	.location
 		color: #363f3f
 		font-size: 14px
@@ -67,12 +214,34 @@
 		padding-top: 3px
 		padding-left: 30px
 		letter-spacing: 0.3px
+<<<<<<< HEAD
+=======
+		// +breakpoint(1023px)
+			// margin-left: 20px
+		// +breakpoint(767px)
+			// margin-left: 0
+			// background-position: 0 0
+			// padding-top: 0
+			// margin-top: 5px
+			// padding-left: 20px
+			// font-size: 13px
+			// line-height: 15px
+			// padding-bottom: 5px
+>>>>>>> 9aecd9abb761d04e6f0b4c141f974974fa92db7c
 
 .input-container	
 	float: right
 	position: relative
 	width: 280px
 	height: 100%
+<<<<<<< HEAD
+=======
+	// +breakpoint(1150px)
+		// float: none
+		// display: inline
+	// +breakpoint(767px)
+		// margin-top: 3px
+>>>>>>> 9aecd9abb761d04e6f0b4c141f974974fa92db7c
 	input[type="search"]
 		color: #363f3f
 		font-size: 14px
@@ -90,6 +259,11 @@
 			display: none
 		&::-ms-clear
 			display: none
+<<<<<<< HEAD
+=======
+		// +breakpoint(767px)
+			// line-height: 20px
+>>>>>>> 9aecd9abb761d04e6f0b4c141f974974fa92db7c
 	input[type="submit"]
 		+opacity(0)
 		outline: none
@@ -104,6 +278,11 @@
 	top: 0px
 	height: 100%
 	line-height: 20px
+<<<<<<< HEAD
+=======
+	// +breakpoint(767px)
+		// background-size: 50%
+>>>>>>> 9aecd9abb761d04e6f0b4c141f974974fa92db7c
 
 
 
